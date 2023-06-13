@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <style>
+    body {
+      margin: 0px;
+      padding: 0px;
+      position: relative;
+      background-color: #140d0e;
+    }
+
+    img {
+      width: 100%;
+      vertical-align: top;
+    }
+
+    .main {
+      width: 50%;
+      margin: auto;
+    }
+
+    #video-box {
+
+      display: flex;
+      position: absolute;
+      top: 90%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+
+    video {
+      margin: 1.2vw;
+      flex: 1;
+      width: 100%;
+      max-width: 12vw;
+      margin-bottom: 20px;
+    }
+
+
+    @media all and (max-width: 1000px) {
+      .main {
+        width: 100%;
+        margin: auto;
+      }
+
+      #video-box {
+        display: flex;
+        position: absolute;
+        top: 91%;
+        left: 38%;
+        transform: translate(-50%, -50%);
+      }
+
+      video {
+        margin: 2.7vw;
+        flex: 1;
+        width: 100%;
+        max-width: 23vw;
+        margin-bottom: 20px;
+      }
+
+    }
+  </style>
+</head>
+
+<body>
+  <a href="" target="blank">
+    <div class="main">
+      <img src="지아.png">
+    </div>
+    <div id="video-box">
+      <video controls poster="">
+        <source src="1.mp4#t=0,19" type="video/mp4">
+      </video>
+      <video controls poster="">
+        <source src="2.mp4#t=0,19" type="video/mp4">
+      </video>
+      <video controls poster="">
+        <source src="3.mp4#t=0,19" type="video/mp4">
+      </video>
+    </div>
+  </a>
+</body>
+
+</html>
